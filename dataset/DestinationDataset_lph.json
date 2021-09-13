@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_lph",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_BANDATALAKE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "themes.csv.gz",
+				"folderPath": "datafiles",
+				"fileSystem": "ustdata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
